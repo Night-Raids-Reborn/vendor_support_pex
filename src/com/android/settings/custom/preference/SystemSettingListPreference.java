@@ -58,10 +58,6 @@ public class SystemSettingListPreference extends ListPreference {
         super.setSummary(summary);
     }
 
-    public int getIntValue(int defValue) {
-        return getValue() == null ? defValue : Integer.valueOf(getValue());
-    }
-
     private boolean isPersisted() {
         return Settings.System.getString(getContext().getContentResolver(), getKey()) != null;
     }
