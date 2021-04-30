@@ -24,6 +24,7 @@
 
     <!-- Value to pass to callback when restore button is pressed -->
     <declare-styleable name="ColorPickerPreference">
+        <attr name="defaultColorValue" format="integer" />
         <attr name="alphaSlider" format="boolean" />
         <attr name="showPreview" format="boolean" />
         <attr name="showReset" format="boolean" />
